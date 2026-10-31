@@ -20,7 +20,7 @@ jobs:
       - name: Validate HTML
         uses: Cyb3r-Jak3/html5validator-action@v7.2.0
         with:
-          files: ./index.html
+          root: .
       - name: Check required portfolio assets
         run: |
           test -f portfolio.css
