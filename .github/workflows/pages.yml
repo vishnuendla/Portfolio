@@ -23,12 +23,29 @@ jobs:
           root: .
       - name: Check required portfolio assets
         run: |
-          test -f portfolio.css
-          test -f favicon.svg
-          test -f VishnueEndla_resume.pdf
+          test -f assets/css/portfolio.css
+          test -f assets/img/favicon.svg
+          test -f assets/resume/endla-vishnu-vardhan-resume.pdf
           grep -q 'id="work"' index.html
           grep -q 'id="about"' index.html
           grep -q 'id="contact"' index.html
+
+      - name: Check local links and assets resolve
+        run: |
+          status=0
+          for ref in $(grep -oE '(href|src)="[^"#]+"' index.html | sed -E 's/.*="([^"]+)"/\1/' | grep -vE '^(https?:|mailto:|tel:|//)'); do
+            if [ ! -f "$ref" ]; then
+              echo "::error file=index.html::Missing local file: $ref"
+              status=1
+            fi
+          done
+          for anchor in $(grep -oE 'href="#[^"]+"' index.html | sed -E 's/.*="#([^"]+)"/\1/'); do
+            if ! grep -q "id=\"$anchor\"" index.html; then
+              echo "::error file=index.html::Missing anchor target: #$anchor"
+              status=1
+            fi
+          done
+          exit $status
 
   deploy:
     name: Deploy GitHub Pages
