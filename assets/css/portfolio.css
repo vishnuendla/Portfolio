@@ -1145,14 +1145,14 @@ footer > a:last-child {
 @media (prefers-color-scheme: light) {
 :root {
   color-scheme: light;
-  --bg: #f7f5f0;
-  --surface: #efede7;
-  --surface2: #e6e2d9;
-  --text: #292821;
-  --muted: #716f66;
-  --line: #ddd9cf;
-  --accent: #b95337;
-  --orange: #cc8556;
+  --bg: #faf9fc;
+  --surface: #ffffff;
+  --surface2: #f2eff8;
+  --text: #24212b;
+  --muted: #615d6b;
+  --line: #e5e1eb;
+  --accent: #6843d8;
+  --orange: #c97145;
 }
 
 body {
@@ -1162,7 +1162,7 @@ body {
 
 .site-header {
   border-color: var(--line);
-  background: rgb(247 245 240 / 94%);
+  background: rgb(250 249 252 / 94%);
 }
 
 .site-header nav a,
@@ -1179,7 +1179,7 @@ footer > a:last-child:hover {
 }
 
 .status-dot {
-  box-shadow: 0 0 0 4px rgb(185 83 55 / 10%);
+  box-shadow: 0 0 0 4px rgb(104 67 216 / 12%);
 }
 
 .eyebrow,
@@ -1206,7 +1206,7 @@ footer > a:last-child:hover {
 }
 
 .button-primary:hover {
-  background: #a94930;
+  background: #5632bd;
 }
 
 .button-quiet {
@@ -1215,7 +1215,7 @@ footer > a:last-child:hover {
 }
 
 .graph-ring {
-  border-color: rgb(185 83 55 / 24%);
+  border-color: rgb(104 67 216 / 26%);
 }
 
 .ring-two {
@@ -1223,18 +1223,18 @@ footer > a:last-child:hover {
 }
 
 .graph-lines path {
-  stroke: rgb(185 83 55 / 40%);
+  stroke: rgb(104 67 216 / 42%);
 }
 
 .graph-lines circle {
   fill: var(--accent);
-  filter: drop-shadow(0 0 5px rgb(185 83 55 / 35%));
+  filter: drop-shadow(0 0 5px rgb(104 67 216 / 35%));
 }
 
 .profile-orb {
-  background: radial-gradient(circle at 35% 30%, #fffefa, #ece8df 78%);
-  border-color: rgb(185 83 55 / 50%);
-  box-shadow: 0 12px 42px rgb(76 62 47 / 12%);
+  background: radial-gradient(circle at 35% 30%, #fff, #eee9f7 78%);
+  border-color: rgb(104 67 216 / 50%);
+  box-shadow: 0 12px 42px rgb(76 62 90 / 14%);
 }
 
 .graphic-grid {
@@ -1284,15 +1284,15 @@ footer > a:last-child:hover {
 
 .route {
   background: var(--accent);
-  box-shadow: 0 0 9px rgb(185 83 55 / 38%);
+  box-shadow: 0 0 9px rgb(104 67 216 / 38%);
 }
 
 .map-point {
   background: var(--accent);
-  border-color: #f4f1e9;
+  border-color: #faf9fc;
   box-shadow:
-    0 0 0 5px rgb(185 83 55 / 12%),
-    0 0 12px rgb(185 83 55 / 28%);
+    0 0 0 5px rgb(104 67 216 / 12%),
+    0 0 12px rgb(104 67 216 / 28%);
 }
 
 .map-coordinates {
@@ -1340,7 +1340,7 @@ footer > a:last-child:hover {
 
 .calc-buttons .calc-orange {
   color: var(--accent);
-  background: rgb(185 83 55 / 9%);
+  background: rgb(104 67 216 / 9%);
 }
 
 .project-meta,
@@ -1375,7 +1375,7 @@ footer > a:last-child:hover {
 }
 
 .timeline:before {
-  background: rgb(185 83 55 / 42%);
+  background: rgb(104 67 216 / 42%);
 }
 
 .timeline span {
@@ -1490,9 +1490,10 @@ footer > a:last-child:hover {
   top: 0;
   height: 72px;
   padding-inline: var(--content-gutter);
-  background: color-mix(in srgb, var(--bg) 92%, transparent);
+  background: color-mix(in srgb, var(--bg) 90%, transparent);
   border-color: var(--line);
   backdrop-filter: blur(16px);
+  box-shadow: 0 1px 0 color-mix(in srgb, var(--line) 65%, transparent);
 }
 
 .site-header nav a,
@@ -1527,6 +1528,9 @@ footer,
   padding-inline: var(--content-gutter);
   grid-template-columns: minmax(0, 1.08fr) minmax(280px, 0.92fr);
   gap: clamp(24px, 5vw, 80px);
+  background:
+    radial-gradient(ellipse at 82% 36%, color-mix(in srgb, var(--accent) 12%, transparent), transparent 34%),
+    var(--bg);
 }
 
 .hero h1 {
@@ -1557,26 +1561,35 @@ footer,
 }
 
 .project-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   align-items: stretch;
-  gap: clamp(22px, 3vw, 44px);
+  gap: clamp(16px, 2vw, 28px);
+}
+
+.project-card:nth-child(3) {
+  grid-column: auto;
 }
 
 .project-card {
   min-width: 0;
-  padding: 14px;
+  padding: 12px;
   background: var(--surface);
   border: 1px solid var(--line);
-  transition: border-color 180ms ease, transform 180ms ease;
+  border-radius: 16px;
+  box-shadow: 0 12px 34px color-mix(in srgb, var(--text) 5%, transparent);
+  transition: border-color 180ms ease, transform 180ms ease, box-shadow 180ms ease;
 }
 
 .project-card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-6px);
   border-color: color-mix(in srgb, var(--accent) 55%, var(--line));
+  box-shadow: 0 20px 42px color-mix(in srgb, var(--text) 10%, transparent);
 }
 
 .project-art {
   width: 100%;
   border: 1px solid var(--line);
+  border-radius: 10px;
 }
 
 .experience,
@@ -1592,6 +1605,7 @@ footer,
 
 .skill-group {
   background: color-mix(in srgb, var(--surface) 72%, var(--bg));
+  transition: background-color 180ms ease;
 }
 
 .button-primary {
@@ -1658,5 +1672,11 @@ footer,
 
   .section-wrap {
     padding-inline: 7%;
+  }
+}
+
+@media (min-width: 621px) and (max-width: 900px) {
+  .project-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
