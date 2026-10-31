@@ -557,7 +557,21 @@ footer > a:last-child:hover {
   line-height: 1.8;
   max-width: 490px;
   min-height: 40px;
-  margin: 0 0 15px;
+  margin: 0 0 12px;
+}
+.project-points {
+  margin: 0 0 16px;
+  padding-left: 15px;
+  max-width: 490px;
+  color: #96988d;
+  font-size: 10px;
+  line-height: 1.75;
+}
+.project-points li {
+  margin-bottom: 5px;
+}
+.project-points li::marker {
+  color: var(--accent);
 }
 .project-bottom {
   display: flex;
@@ -1002,6 +1016,9 @@ footer > a:last-child {
   }
   .project-card > p {
     min-height: 0;
+  }
+  .project-points {
+    font-size: 9.5px;
   }
   .experience {
     grid-template-columns: 1fr;
