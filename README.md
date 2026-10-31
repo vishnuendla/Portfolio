@@ -28,7 +28,7 @@ Open `index.html` in a browser or run a static server from this folder, for exam
 These are good follow-up tasks for Cursor or OpenCode:
 
 1. Add real screenshots and live demos for each project; confirm image rights and deployment URLs first.
-2. Replace the generic LinkedIn URL with Vishnu's profile and add any other verified social profiles.
+2. Add any other verified social profiles.
 3. Add project filters, richer case studies, and links to architecture or source documentation.
 4. Add an accessible mobile navigation menu and keyboard focus styles, then test with a screen reader.
 5. Add social preview metadata, a favicon, and a sitemap if a permanent domain is configured.
