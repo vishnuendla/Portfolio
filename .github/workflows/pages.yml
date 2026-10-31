@@ -24,6 +24,7 @@ jobs:
       - name: Check required portfolio assets
         run: |
           test -f portfolio.css
+          test -f favicon.svg
           test -f VishnueEndla_resume.pdf
           grep -q 'id="work"' index.html
           grep -q 'id="about"' index.html
