@@ -25,11 +25,11 @@ Anything referenced from `index.html` uses a path relative to the repository roo
 
 ## Featured projects
 
-| Project | What it is | Stack | Link |
-| --- | --- | --- | --- |
-| **Odyssey** | Full-stack travel journal for documenting trips with photos and places, exploring public journals, and replaying routes on a map and timeline. | React 18, TypeScript, Vite, Tailwind CSS, Leaflet, Java 17, Spring Boot 3.2, Spring Security, JWT, MySQL | [vishnuendla/odyssey](https://github.com/vishnuendla/odyssey) |
-| **Voice Lab** | Browser voice lab: speak in the tab and hear a spoken reply through a Pipecat speech → LLM → speech pipeline, with optional conversation memory. | Python, Pipecat, Sarvam, Groq, OpenRouter, FastAPI, WebSockets, PostgreSQL | [vishnuendla/voice-lab](https://github.com/vishnuendla/voice-lab) |
-| **Calculator** | Four-function calculator with chained operations and a single reset, written as one static page. | HTML, CSS, JavaScript | [vishnuendla/Calculator](https://github.com/vishnuendla/Calculator) |
+| Project        | What it is                                                                                                                                       | Stack                                                                                                    | Link                                                                |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
+| **Odyssey**    | Full-stack travel journal for documenting trips with photos and places, exploring public journals, and replaying routes on a map and timeline.   | React 18, TypeScript, Vite, Tailwind CSS, Leaflet, Java 17, Spring Boot 3.2, Spring Security, JWT, MySQL | [vishnuendla/odyssey](https://github.com/vishnuendla/odyssey)       |
+| **Voice Lab**  | Browser voice lab: speak in the tab and hear a spoken reply through a Pipecat speech → LLM → speech pipeline, with optional conversation memory. | Python, Pipecat, Sarvam, Groq, OpenRouter, FastAPI, WebSockets, PostgreSQL                               | [vishnuendla/voice-lab](https://github.com/vishnuendla/voice-lab)   |
+| **Calculator** | Four-function calculator with chained operations and a single reset, written as one static page.                                                 | HTML, CSS, JavaScript                                                                                    | [vishnuendla/Calculator](https://github.com/vishnuendla/Calculator) |
 
 Project copy on the page is based on each repository's README and source. Keep it factual: describe what exists, not what is planned.
 
@@ -38,7 +38,7 @@ Project copy on the page is based on each repository's README and source. Keep i
 - **Sections and copy** live in `index.html`. Each section has an `id` used by the header navigation: `home`, `work`, `experience`, `about`, `contact`.
 - **Colors, spacing, and typography** are defined once at the top of `assets/css/portfolio.css`; components come after the tokens.
 - **Adding a project**: add an `<article class="project-card">` inside `.project-grid`, give it an art block, meta stack line, description, `.project-points` highlights, and a repository link. Then add a row to the table above.
-- **Resume**: replace `assets/resume/endla-vishnu-vardhan-resume.pdf` and keep the filename, or update both download links in `index.html`.
+- **Resume**: the two résumé links both point to `assets/resume/endla-vishnu-vardhan-resume.pdf`. Keep that single PDF in the folder and replace it to update the download; CI fails if the file is missing or if extra PDFs are added.
 - **Contact details**: the email appears in the header CTA and the contact section; LinkedIn and GitHub appear in the about and contact sections.
 
 ## Run locally
@@ -62,10 +62,10 @@ The deployed URL is configured as the canonical link and Open Graph URL in `inde
 
 ## Branching and pull requests
 
-| Branch | Purpose |
-| --- | --- |
+| Branch | Purpose                                  |
+| ------ | ---------------------------------------- |
 | `main` | Production. Every push deploys the site. |
-| `dev` | Integration branch for completed work. |
+| `dev`  | Integration branch for completed work.   |
 
 Flow:
 
