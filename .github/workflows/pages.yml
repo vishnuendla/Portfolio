@@ -25,7 +25,10 @@ jobs:
         run: |
           test -f assets/css/portfolio.css
           test -f assets/img/favicon.svg
+          resume_pdf_count=$(find assets/resume -maxdepth 1 -type f -iname '*.pdf' | wc -l)
+          test "$resume_pdf_count" -eq 1
           test -f assets/resume/endla-vishnu-vardhan-resume.pdf
+          grep -Fq 'href="assets/resume/endla-vishnu-vardhan-resume.pdf"' index.html
           grep -q 'id="work"' index.html
           grep -q 'id="about"' index.html
           grep -q 'id="contact"' index.html
