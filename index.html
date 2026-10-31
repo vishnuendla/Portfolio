@@ -14,21 +14,25 @@
       property="og:description"
       content="AI/ML, computer vision, and full-stack engineering. Explore selected work and experience."
     />
+    <meta property="og:site_name" content="Endla Vishnu Vardhan" />
+    <meta property="og:url" content="https://vishnuendla.github.io/Portfolio/" />
+    <meta name="twitter:card" content="summary" />
     <title>Endla Vishnu Vardhan — AI/ML Engineer</title>
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="canonical" href="https://vishnuendla.github.io/Portfolio/" />
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="portfolio.css" />
+    <link rel="stylesheet" href="assets/css/portfolio.css" />
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
     <header class="site-header">
       <a class="brand" href="#home" aria-label="Endla Vishnu Vardhan, home"
-        ><img src="favicon.svg" alt="" /><span>ENDLA VISHNU VARDHAN</span></a
+        ><img src="assets/img/favicon.svg" alt="" /><span>ENDLA VISHNU VARDHAN</span></a
       >
       <nav aria-label="Main navigation">
         <a href="#work">Projects</a><a href="#experience">Experience</a
@@ -59,7 +63,7 @@
               >Explore selected work <span aria-hidden="true">↓</span></a
             ><a
               class="button button-quiet"
-              href="VishnueEndla_resume.pdf"
+              href="assets/resume/endla-vishnu-vardhan-resume.pdf"
               target="_blank"
               rel="noopener"
               >View résumé <span aria-hidden="true">↗</span></a
@@ -93,7 +97,7 @@
             <circle cx="390" cy="362" r="5" />
           </svg>
           <div class="profile-orb">
-            <img src="favicon.svg" alt="Person icon" />
+            <img src="assets/img/favicon.svg" alt="Person icon" />
           </div>
           <span class="graphic-tag tag-ml">MODEL / 01</span
           ><span class="graphic-tag tag-data">DATA → INSIGHT</span
@@ -133,13 +137,28 @@
               ><span class="art-corner">↗</span></a
             >
             <div class="project-meta">
-              <span>REACT · TYPESCRIPT · SPRING BOOT</span><span>01</span>
+              <span>REACT · TYPESCRIPT · SPRING BOOT · MYSQL</span><span>01</span>
             </div>
             <h3>Odyssey <span>Travel journal</span></h3>
             <p>
-              A full-stack travel journal for creating and exploring stories by
-              place, with interactive maps, media, and secure accounts.
+              A full-stack travel journal where people document trips with
+              photos and places, browse public journals, and replay routes on a
+              map and timeline.
             </p>
+            <ul class="project-points">
+              <li>
+                React 18 and TypeScript frontend with Leaflet maps, Geoapify
+                place search, and Vite builds.
+              </li>
+              <li>
+                Spring Boot 3.2 and MySQL backend with Spring Security and JWT
+                sessions.
+              </li>
+              <li>
+                CI runs frontend lint, typecheck, and production build alongside
+                Maven verification.
+              </li>
+            </ul>
             <div class="project-bottom">
               <span class="project-type">WEB APPLICATION</span
               ><a
@@ -174,9 +193,24 @@
             </div>
             <h3>Voice Lab <span>Browser voice assistant</span></h3>
             <p>
-              A browser-first voice assistant connecting speech recognition,
-              language models, and speech synthesis in a live conversation.
+              A browser-first voice lab: speak into the tab, watch the
+              transcript stream, and hear the reply read back in the same
+              session.
             </p>
+            <ul class="project-points">
+              <li>
+                Pipecat pipeline runs speech-to-text, one LLM turn, and
+                text-to-speech inside one live browser conversation.
+              </li>
+              <li>
+                Sarvam handles speech, Groq answers, and OpenRouter takes over
+                automatically when the primary model errors.
+              </li>
+              <li>
+                Optional PostgreSQL storage keeps session summaries and
+                long-term memories between visits.
+              </li>
+            </ul>
             <div class="project-bottom">
               <span class="project-type">AI EXPERIMENT</span
               ><a
@@ -198,9 +232,9 @@
               <div class="calc-widget">
                 <span>RESULT</span><strong>2,026<span>.</span></strong>
                 <div class="calc-buttons">
-                  <i>AC</i><i>±</i><i>%</i><i class="calc-orange">÷</i><i>7</i
-                  ><i>8</i><i>9</i><i class="calc-orange">×</i><i>4</i><i>5</i
-                  ><i>6</i><i class="calc-orange">−</i>
+                  <i>7</i><i>8</i><i>9</i><i class="calc-orange">÷</i><i>4</i
+                  ><i>5</i><i>6</i><i class="calc-orange">×</i><i>1</i><i>2</i
+                  ><i>3</i><i class="calc-orange">−</i>
                 </div>
               </div>
               <span class="art-corner">↗</span></a
@@ -210,9 +244,23 @@
             </div>
             <h3>Calculator <span>Everyday utility</span></h3>
             <p>
-              A focused calculator with a simple visual language, responsive
-              layout, and familiar arithmetic controls.
+              A focused four-function calculator with chained operations, a
+              single reset, and no framework in the way.
             </p>
+            <ul class="project-points">
+              <li>
+                Addition, subtraction, multiplication, and division that chain
+                from the previous result.
+              </li>
+              <li>
+                Hand-written DOM logic and one stylesheet, with no build step or
+                dependencies.
+              </li>
+              <li>
+                Centered calculator grid sized for quick use on a desktop or
+                phone screen.
+              </li>
+            </ul>
             <div class="project-bottom">
               <span class="project-type">FRONTEND</span
               ><a
@@ -248,7 +296,7 @@
           </p>
           <a
             class="text-link"
-            href="VishnueEndla_resume.pdf"
+            href="assets/resume/endla-vishnu-vardhan-resume.pdf"
             target="_blank"
             rel="noopener"
             >FULL EXPERIENCE IN MY RÉSUMÉ ↗</a
@@ -310,7 +358,7 @@
         <div class="about-layout">
           <div class="about-bio">
             <div class="person-emblem">
-              <img src="favicon.svg" alt="Person icon" />
+              <img src="assets/img/favicon.svg" alt="Person icon" />
             </div>
             <p>
               AI/ML-focused engineer with hands-on practice in deep learning and
@@ -426,7 +474,7 @@
 
     <footer>
       <a class="brand" href="#home"
-        ><img src="favicon.svg" alt="" /><span>ENDLA VISHNU VARDHAN</span></a
+        ><img src="assets/img/favicon.svg" alt="" /><span>ENDLA VISHNU VARDHAN</span></a
       ><span>AI / ML · SOFTWARE ENGINEERING</span
       ><a href="#home">BACK TO TOP ↑</a>
     </footer>
