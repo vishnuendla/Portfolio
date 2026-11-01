@@ -4,8 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="theme-color" content="#f7f5f0" media="(prefers-color-scheme: light)" />
-    <meta name="theme-color" content="#10120f" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#f7f7f4" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#151714" media="(prefers-color-scheme: dark)" />
     <meta
       name="description"
       content="Endla Vishnu Vardhan is an AI/ML-focused software engineer working across machine learning, computer vision, and full-stack development."
@@ -46,7 +46,7 @@
         ><a href="#about">About</a><a href="#contact">Contact</a>
       </nav>
       <a class="header-cta" href="mailto:vishnuendla12@gmail.com"
-        ><span class="status-dot"></span>Let's talk
+        ><span class="status-dot" aria-hidden="true"></span>Let's talk
         <span aria-hidden="true">↗</span></a
       >
     </header>
@@ -55,7 +55,7 @@
       <section class="hero" id="home">
         <div class="hero-main">
           <p class="eyebrow">
-            <span class="status-dot"></span> AI / ML ENGINEER · SOFTWARE
+            <span class="status-dot" aria-hidden="true"></span> AI / ML ENGINEER · SOFTWARE
             DEVELOPER
           </p>
           <h1>
@@ -105,14 +105,14 @@
             <circle cx="390" cy="362" r="5" />
           </svg>
           <div class="profile-orb">
-            <img src="assets/img/favicon.svg" alt="Person icon" />
+            <img src="assets/img/favicon.svg" alt="" />
           </div>
           <span class="graphic-tag tag-ml">MODEL / 01</span
           ><span class="graphic-tag tag-data">DATA → INSIGHT</span
           ><span class="graphic-cross">✳</span>
         </div>
         <div class="hero-bottom">
-          <span>SCROLL TO DISCOVER</span><span>01 — 04</span>
+          <span>SCROLL TO DISCOVER</span><span>01 — 06</span>
         </div>
       </section>
 
@@ -123,61 +123,11 @@
             <h2>Ideas in <span class="serif-accent">practice.</span></h2>
           </div>
           <p class="section-note">
-            A few projects exploring full-stack product development, voice
-            interfaces, and practical tools.
+            Selected work across voice AI, full-stack products, and evidence-led
+            decision support.
           </p>
         </div>
         <div class="project-grid">
-          <article class="project-card project-odyssey">
-            <a
-              class="project-art odyssey-art"
-              href="https://github.com/vishnuendla/odyssey"
-              target="_blank"
-              rel="noopener"
-              aria-label="View Odyssey repository"
-              ><span class="art-index">01 / FULL STACK</span
-              ><span class="route route-one"></span
-              ><span class="route route-two"></span
-              ><span class="map-point point-one"></span
-              ><span class="map-point point-two"></span
-              ><span class="map-point point-three"></span
-              ><span class="map-coordinates">17.9689° N<br />79.5941° E</span
-              ><span class="art-corner">↗</span></a
-            >
-            <div class="project-meta">
-              <span>REACT · TYPESCRIPT · SPRING BOOT · MYSQL</span
-              ><span>01</span>
-            </div>
-            <h3>Odyssey <span>Travel journal</span></h3>
-            <p>
-              A full-stack travel journal where people document trips with
-              photos and places, browse public journals, and replay routes on a
-              map and timeline.
-            </p>
-            <ul class="project-points">
-              <li>
-                React 18 and TypeScript frontend with Leaflet maps, Geoapify
-                place search, and Vite builds.
-              </li>
-              <li>
-                Spring Boot 3.2 and MySQL backend with Spring Security and JWT
-                sessions.
-              </li>
-              <li>
-                CI runs frontend lint, typecheck, and production build alongside
-                Maven verification.
-              </li>
-            </ul>
-            <div class="project-bottom">
-              <span class="project-type">WEB APPLICATION</span
-              ><a
-                href="https://github.com/vishnuendla/odyssey"
-                target="_blank"
-                rel="noopener"
-                >VIEW REPOSITORY ↗</a
-              >
-            </div>
-          </article>
           <article class="project-card project-voice">
             <a
               class="project-art voice-art"
@@ -185,7 +135,7 @@
               target="_blank"
               rel="noopener"
               aria-label="View Voice Lab repository"
-              ><span class="art-index">02 / VOICE AI</span>
+              ><span class="art-index">01 / VOICE AI</span>
               <div class="voice-core">
                 <span>VOICE</span>
                 <div class="waveform" aria-hidden="true">
@@ -198,7 +148,7 @@
               ><span class="art-corner">↗</span></a
             >
             <div class="project-meta">
-              <span>PYTHON · PIPECAT · SARVAM · GROQ</span><span>02</span>
+              <span>PYTHON · PIPECAT · SARVAM · GROQ</span><span>01</span>
             </div>
             <h3>Voice Lab <span>Browser voice assistant</span></h3>
             <p>
@@ -212,12 +162,8 @@
                 text-to-speech inside one live browser conversation.
               </li>
               <li>
-                Sarvam handles speech, Groq answers, and OpenRouter takes over
-                automatically when the primary model errors.
-              </li>
-              <li>
-                Optional PostgreSQL storage keeps session summaries and
-                long-term memories between visits.
+                Sarvam speech, Groq with OpenRouter failover, and optional
+                PostgreSQL memory support the conversation.
               </li>
             </ul>
             <div class="project-bottom">
@@ -230,50 +176,92 @@
               >
             </div>
           </article>
-          <article class="project-card project-calculator">
+          <article class="project-card project-odyssey">
             <a
-              class="project-art calculator-art"
-              href="https://github.com/vishnuendla/Calculator"
+              class="project-art odyssey-art"
+              href="https://github.com/vishnuendla/odyssey"
               target="_blank"
               rel="noopener"
-              aria-label="View Calculator repository"
-              ><span class="art-index">03 / WEB TOOL</span>
-              <div class="calc-widget">
-                <span>RESULT</span><strong>2,026<span>.</span></strong>
-                <div class="calc-buttons">
-                  <i>7</i><i>8</i><i>9</i><i class="calc-orange">÷</i><i>4</i
-                  ><i>5</i><i>6</i><i class="calc-orange">×</i><i>1</i><i>2</i
-                  ><i>3</i><i class="calc-orange">−</i>
-                </div>
+              aria-label="View Odyssey repository"
+            ><span class="art-index">02 / FULL STACK</span
+              ><span class="route route-one"></span
+              ><span class="route route-two"></span
+              ><span class="map-point point-one"></span
+              ><span class="map-point point-two"></span
+              ><span class="map-point point-three"></span
+              ><span class="map-coordinates">17.9689° N<br />79.5941° E</span
+              ><span class="art-corner">↗</span></a
+            >
+            <div class="project-meta">
+              <span>REACT · TYPESCRIPT · SPRING BOOT · MYSQL</span
+              ><span>02</span>
+            </div>
+            <h3>Odyssey <span>Travel journal</span></h3>
+            <p>
+              A full-stack travel journal where people document trips with
+              photos and places, browse public journals, and replay routes on a
+              map and timeline.
+            </p>
+            <ul class="project-points">
+              <li>
+                React 18 and TypeScript frontend with Leaflet maps, Geoapify
+                place search, and Vite builds.
+              </li>
+              <li>
+                Spring Security and JWT protect journal workflows; frontend and
+                backend checks run in CI.
+              </li>
+            </ul>
+            <div class="project-bottom">
+              <span class="project-type">WEB APPLICATION</span
+              ><a
+                href="https://github.com/vishnuendla/odyssey"
+                target="_blank"
+                rel="noopener"
+                >VIEW REPOSITORY ↗</a
+              >
+            </div>
+          </article>
+          <article class="project-card project-vanguard">
+            <a
+              class="project-art vanguard-art"
+              href="https://github.com/vishnuendla/Vanguard"
+              target="_blank"
+              rel="noopener"
+              aria-label="View Vanguard repository"
+              ><span class="art-index">03 / RISK INTELLIGENCE</span>
+              <div class="vanguard-board" aria-hidden="true">
+                <div class="vanguard-board-head"><span>REVIEW QUEUE</span><span>03 OPEN</span></div>
+                <div class="vendor-row vendor-critical"><i></i><span>Northstar Logistics</span><b>86</b></div>
+                <div class="vendor-row"><i></i><span>Apex Components</span><b>54</b></div>
+                <div class="vendor-row"><i></i><span>Meridian Packaging</span><b>31</b></div>
+                <div class="evidence-line"><span></span><span></span><span></span></div>
               </div>
               <span class="art-corner">↗</span></a
             >
             <div class="project-meta">
-              <span>HTML · CSS · JAVASCRIPT</span><span>03</span>
+              <span>PYTHON · FASTAPI · SQLITE</span><span>03</span>
             </div>
-            <h3>Calculator <span>Everyday utility</span></h3>
+            <h3>Vanguard <span>Vendor risk intelligence</span></h3>
             <p>
-              A focused four-function calculator with chained operations, a
-              single reset, and no framework in the way.
+              A procurement review queue that turns supplier signals into a
+              traceable decision, keeping reported evidence separate from
+              inferred impact.
             </p>
             <ul class="project-points">
               <li>
-                Addition, subtraction, multiplication, and division that chain
-                from the previous result.
+                Transparent risk scoring links incidents to dated source
+                evidence and verification steps.
               </li>
               <li>
-                Hand-written DOM logic and one stylesheet, with no build step or
-                dependencies.
-              </li>
-              <li>
-                Centered calculator grid sized for quick use on a desktop or
-                phone screen.
+                Human review decisions capture rationale; the demo uses
+                synthetic data and non-predictive heuristics.
               </li>
             </ul>
             <div class="project-bottom">
-              <span class="project-type">FRONTEND</span
+              <span class="project-type">CURRENT PROJECT</span
               ><a
-                href="https://github.com/vishnuendla/Calculator"
+                href="https://github.com/vishnuendla/Vanguard"
                 target="_blank"
                 rel="noopener"
                 >VIEW REPOSITORY ↗</a
@@ -368,7 +356,7 @@
         <div class="about-layout">
           <div class="about-bio">
             <div class="person-emblem">
-              <img src="assets/img/favicon.svg" alt="Person icon" />
+              <img src="assets/img/favicon.svg" alt="" />
             </div>
             <p>
               AI/ML-focused engineer with hands-on practice in deep learning and
@@ -413,7 +401,7 @@
             <div class="skill-group">
               <span class="skill-number">04</span>
               <h3>Programming</h3>
-              <p>Python · SQL · JavaScript · TypeScript · Java · Groovy</p>
+              <p>Python · SQL · JavaScript · TypeScript</p>
             </div>
             <div class="skill-group">
               <span class="skill-number">05</span>
@@ -423,7 +411,7 @@
             <div class="skill-group">
               <span class="skill-number">06</span>
               <h3>Databases</h3>
-              <p>PostgreSQL · Pgvector · MySQL · Oracle SQL</p>
+              <p>PostgreSQL · Pgvector · MySQL</p>
             </div>
           </div>
         </div>
@@ -446,11 +434,16 @@
           <p class="eyebrow">CERTIFICATIONS</p>
           <div class="cert-row">
             <span>01</span>
-            <p>Full Stack Java Development</p>
+            <p>Claude Certified Developer – Foundations (Anthropic)</p>
             <span></span>
           </div>
           <div class="cert-row">
             <span>02</span>
+            <p>Full Stack Java Development</p>
+            <span></span>
+          </div>
+          <div class="cert-row">
+            <span>03</span>
             <p>Data Structures and Algorithms</p>
             <span></span>
           </div>
